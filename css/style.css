@@ -1,0 +1,356 @@
+/* global */
+
+@keyframes link-hover {
+    from {background-color: #EB6C15;}
+    to {background-color: #F6AB00;}
+}
+
+body {
+    margin: 0px;
+}
+
+/* navbar div */
+.topnav {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #EB6C15;
+}
+
+.topnav h1 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 70px;
+    cursor: pointer;
+}
+
+/* navbar link */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    /* set fixed size */
+    width: 80px;
+    /* set align */
+    line-height: 60px;
+    text-align: center;
+}
+
+/* link - when hovering */
+.topnav a:hover {
+    animation-name: link-hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.main {
+    position: absolute;
+    top: 90px;
+    height: calc(100% - 90px);
+    overflow: auto;
+    width: 100%;
+}
+
+/* index.html */
+
+/* slide image */
+.container ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    height: 85%;
+    position: relative;
+    top: 8%;
+    margin: 0 auto;
+    /*border: 1px solid #ccc;*/
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    opacity: 0;
+    border-radius: 3%;
+    }
+
+.container img.on {
+    opacity: 1;
+}
+
+.left, .right {
+    position: absolute;
+    top: 40%;
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #666;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 60px;
+    color: #ccc;
+    display: none;
+    cursor: pointer;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.container:hover .left, .container:hover .right {
+    display: block;
+}
+
+.left:hover, .right:hover {
+    color: #fff;
+}
+
+.container ul {
+    position: absolute;
+    right: 7%;
+    margin: 0 auto;
+    bottom: 7%;
+    padding: 5px;
+    display: table;
+}
+
+.container ul li {
+    list-style: none;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.container ul li.active {
+    background-color: #fff;
+}
+
+.adcard {
+    position: absolute;
+    background-color: #eee;
+    width: 20%;
+    height: 40%;
+    border-radius: 5%;
+}
+
+.adcard img {
+    position: relative;
+    width: 90%;
+    height: 60%;
+    top: 6%;
+    border-radius: 5%;
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.adcard h2, p{
+    position: relative;
+    padding: 0px 20px;
+}
+
+.adcard a {
+    color: black;
+    text-decoration: none;
+}
+
+#card-lt {
+    top: 8%;
+    left: 3%;
+}
+
+#card-lb {
+    top: 52%;
+    left: 3%;
+}
+
+#card-rt {
+    top: 8%;
+    right: 3%;
+}
+
+#card-rb {
+    top: 52%;
+    right: 3%;
+}
+
+/* article.html */
+
+.atc {
+    position: relative;
+    background-color: #eee;
+    width: 50%;
+    border-radius: 5% / 10%;
+    display: table;
+    margin: 30px auto;
+}
+
+.atc img {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 180px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 10%;
+}
+
+.atc h2 {
+    position: relative;
+    margin: 50px 0px 10px 50px;
+}
+
+.atc p {
+    position: relative;
+    margin: 0px 0px 30px 50px;
+    font-size: 20px;
+}
+
+.atc a {
+    color: black;
+    text-decoration: none;
+}
+
+/* project.html */
+
+.proj {
+    position: relative;
+    background-color: #eee;
+    width: 50%;
+    border-radius: 5% / 10%;
+    display: table;
+    margin: 30px auto;
+}
+
+.proj img {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 200px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 10%;
+}
+
+.proj h2 {
+    position: relative;
+    margin: 50px 0px 10px 50px;
+}
+
+.proj a.link {
+    color: black;
+    text-decoration: none;
+}
+
+.proj a.btn {
+    padding: 8px 16px;
+    margin: 10px 40px 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    float: right;
+    border-radius: 10% / 20%;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.proj p {
+    position: relative;
+    margin: 0px 0px 30px 50px;
+    font-size: 20px;
+}
+
+.proj a.btn:hover {
+    background-color: #45a049;
+}
+
+/* contact.html */
+
+.main h1 {
+    margin: 50px 0px 40px 0px;
+    text-align: center;
+}
+
+.piece {
+    position: relative;
+    background-color: #eee;
+    width: 50%;
+    border-radius: 25px / 50px;
+    display: table;
+    margin: 30px auto;
+}
+
+.piece p {
+    position: relative;
+    margin: 20px 0px 30px 50px;
+    font-size: 23px;
+}
+
+.piece a.btn {
+    padding: 8px 16px;
+    margin: 20px 50px 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    float: right;
+    border-radius: 10% / 20%;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.piece a.btn:hover {
+    background-color: #45a049;
+}
+
+.form {
+    display: table;
+    font-size: 18px;
+    margin: 0px auto;
+}
+
+.form input[type=text] {
+    display: block;
+    margin: 0px 0px;
+    font-size: 16px;
+    width: 500px;
+    height: 30px;
+}
+
+.form textarea {
+    display: block;
+    font-size: 16px;
+    margin: 0px 0px;
+    width: 500px;
+    height: 80px;
+}
+
+.form input[type=submit] {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background-color: #4CAF50;
+    border-radius: 5% / 20%;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0 30px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background-color: #45a049;
+}
