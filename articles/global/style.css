@@ -1,0 +1,115 @@
+@keyframes link-hover {
+    from {
+        background-color: #EB6C15;
+    }
+
+    to {
+        background-color: #F6AB00;
+    }
+}
+
+body {
+    margin: 0px;
+}
+
+/* navbar div */
+.topnav {
+    overflow: hidden;
+    position: relative;
+    background-color: #EB6C15;
+}
+
+.topnav h1 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 70px;
+    cursor: pointer;
+}
+
+/* navbar link */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    /* set fixed size */
+    width: 80px;
+    /* set align */
+    line-height: 60px;
+    text-align: center;
+}
+
+/* link - when hovering */
+.topnav a:hover {
+    animation-name: link-hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* slide image */
+div, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    height: 85%;
+    position: relative;
+    top: 8%;
+    margin: 0 auto;
+    /*border: 1px solid #ccc;*/
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    opacity: 0;
+    border-radius: 3%;
+    }
+
+.container img.on {
+    opacity: 1;
+}
+
+.main {
+    position: absolute;
+    top: 90px;
+    height: calc(100% - 90px);
+    overflow: auto;
+    width: 100%;
+}
+
+.text {
+    width: 60%;
+    height: 100%;
+    background-color: #eee;
+    display: table;
+    margin: 0 auto;
+}
+
+.text h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.text p {
+    font-size: 22px;
+    padding: 20px 50px;
+}
+
+.text img.left {
+    float: left;
+    padding-right: 30px;
+}
+
+.text img.right {
+    float: right;
+    padding-left: 30px;
+}
